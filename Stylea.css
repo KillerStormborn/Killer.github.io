@@ -1,0 +1,95 @@
+
+.o {
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(240, 194, 240)
+}
+
+body {
+    margin: 0;
+    background-color: bisque;
+}
+.f {
+  text-align: center;
+  color: rgb(75, 14, 173);
+  position: relative;
+  height: 350px;
+  font-size: 18px;
+  max-width: 1200px;
+  top: 50%;
+  left: 15%;
+}
+
+.m {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: rgb(75, 14, 173);
+  position: relative;
+  height: 250px;
+  font-size: 18px;
+}
+
+.fondo{
+    margin: 0;
+    background-image: url("slp.jpg");
+    background-size:  center;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 50px;
+    position: auto;
+}
+
+.corazon-footer {
+  position: fixed;
+  bottom: 27px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.texto-corazon {
+  position: absolute;
+  top: 14px;
+  margin-top: 10px;
+  color: rgb(156, 223, 214);
+  font-size: 18px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.corazon {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: red;
+  transform: rotate(-45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.corazon::before,
+.corazon::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: red;
+  border-radius: 50%;
+}
+
+.corazon::before {
+  top: -60px;
+  left: 0;
+}
+
+.corazon::after {
+  left: 60px;
+  top: 0;
+}
